@@ -62,7 +62,8 @@ class ButtonBoxWhite extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             children: [
-              Image.asset(imagePath),
+              imagePath != "" ? Image.asset(imagePath) : SizedBox.shrink(),
+              // Image.asset(imagePath),
               SizedBox(width: 3),
               Text('${label}', style: MyText().greytext),
             ],

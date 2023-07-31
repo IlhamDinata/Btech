@@ -11,6 +11,7 @@ import 'package:btech/widgets/organizedby.dart';
 import 'package:btech/widgets/supportedby.dart';
 import 'package:btech/widgets/voucher_content.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BottomOverlay extends StatelessWidget {
@@ -31,27 +32,37 @@ class BottomOverlay extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CategoryBox(
-                onTap: () {},
+                onTap: () {
+                  Get.snackbar('Hotel', '', duration: Duration(seconds: 1));
+                },
                 imagePath: 'assets/icon/hotel.png',
                 text: 'Hotel',
               ),
               CategoryBox(
-                onTap: () {},
+                onTap: () {
+                  Get.snackbar('Event', '', duration: Duration(seconds: 1));
+                },
                 imagePath: 'assets/icon/mountain.png',
                 text: 'Event',
               ),
               CategoryBox(
-                onTap: () {},
+                onTap: () {
+                  Get.snackbar('F & B', '', duration: Duration(seconds: 1));
+                },
                 imagePath: 'assets/icon/grill.png',
                 text: 'F & B',
               ),
               CategoryBox(
-                onTap: () {},
+                onTap: () {
+                  Get.snackbar('Ticket', '', duration: Duration(seconds: 1));
+                },
                 imagePath: 'assets/icon/ticket2.png',
                 text: 'Ticket',
               ),
               CategoryBox(
-                onTap: () {},
+                onTap: () {
+                  Get.snackbar('Mall', '', duration: Duration(seconds: 1));
+                },
                 imagePath: 'assets/icon/mall.png',
                 text: 'Mall',
               ),
@@ -111,7 +122,7 @@ class BottomOverlay extends StatelessWidget {
                 ButtonBoxWhite(
                   onTap: () {},
                   label: 'Semua',
-                  imagePath: 'assets/icon/apple.png',
+                  imagePath: "",
                 ),
                 ButtonBoxWhite(
                   onTap: () {},

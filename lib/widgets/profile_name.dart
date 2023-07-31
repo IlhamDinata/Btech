@@ -35,7 +35,11 @@ class ProfileName extends StatelessWidget {
           SizedBox(width: Dimens(context).width * 0.08),
           InkWell(
             onTap: () {
-              Get.snackbar('Notification', '');
+              Get.snackbar(
+                'Notification',
+                '',
+                duration: Duration(seconds: 1),
+              );
             },
             child: SizedBox(
               child: Stack(
@@ -60,7 +64,13 @@ class ProfileName extends StatelessWidget {
           ),
           SizedBox(width: Dimens(context).width * 0.04),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Get.snackbar(
+                'Promo',
+                '',
+                duration: Duration(seconds: 1),
+              );
+            },
             child: SizedBox(
               child: Stack(
                 children: [
@@ -98,4 +108,3 @@ class ProfileName extends StatelessWidget {
     );
   }
 }
-
